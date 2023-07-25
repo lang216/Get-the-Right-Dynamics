@@ -3,7 +3,7 @@ import librosa
 
 def analyze_audio(audio_file):
     # Load audio file and calculate the Short-time Fourier Transform (STFT)
-    y, sample_rate = librosa.load(audio_file, mono=True)
+    y, sample_rate = librosa.load((audio_file), mono=True)
     stft_result = librosa.stft(y)
 
     # Calculate the corresponding frequencies
